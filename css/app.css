@@ -1,0 +1,42 @@
+body {
+	background-color: white;
+	font-family: 'Raleway', sans-serif;
+	background-image: url(../images/background.jpg);
+}
+
+#logoIndex
+{
+	max-width: 75px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 200px;
+}
+
+
+#loginButtonCont {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#loginButton {
+	font-family: 'Raleway', sans-serif;
+	font-size: 12pt;
+	text-decoration: none;
+	border-radius: 100px;
+	border: solid 1px #efefef;
+	background-color: rgba(255, 255, 255, .2);
+	color: #efefef;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 25px;
+	transition: .5s;
+}
+
+#loginButton:hover {
+	background-color: rgba(255, 255, 255, .5);
+}

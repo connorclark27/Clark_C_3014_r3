@@ -1,0 +1,7 @@
+GREETING:
+https://stackoverflow.com/questions/2182511/setting-a-greeting-based-on-users-time-good-morning-good-afternoon
+https://dev.mysql.com/doc/refman/5.7/en/datetime.html
+
+
+LAST LOGIN:	https://stackoverflow.com/questions/15290620/displaying-last-login-time-in-php
+http://www.sitepoint.com/forums/showthread.php?326843-Record-users-last-login-time
