@@ -1,23 +1,19 @@
 <?php
 //This file will load all of your php scripts
 
-function redirect_to($location) {
-	if($location != NULL){
-			header("Location: {$location}");
-			exit;
-
-	}
-}
-
 
 //Sends email to new user with login information
-function submitMessage($name, $email, $message, $direct) {
-	$to = "connor.n.clark@gmail.com";
-	$subj = "Message from customer submitted via connorclark.ca";
+function submitMessage($fname, $username, $password, $email, $direct) {
+	$to = .$email;
+	$subj = "Your new Username + Password";
 	$extra = "Reply-To:".$email;
-	$msg = "Name: ".$name."\n\nEmail: ".$email."\n\nComments: ".$message;
+	$msg = 
+		"Name: ".$fname.
+		"\n\nUsername: ".$username.
+		"\n\nPassword: ".$password.
+		"\n\nEmail: ".$email;
 	mail($to,$subj,$msg,$extra);
-	$direct = $direct."?name={$name}";
+	$direct = $direct."?fname={$fname}";
 	redirect_to($direct);
  }
 
