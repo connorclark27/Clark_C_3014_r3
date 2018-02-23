@@ -4,7 +4,7 @@
 
 //Sends email to new user with login information
 function submitMessage($fname, $username, $password, $email, $direct) {
-	$to = .$email;
+	$to = $email;
 	$subj = "Your new Username + Password";
 	$extra = "Reply-To:".$email;
 	$msg = 

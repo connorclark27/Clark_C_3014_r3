@@ -10,12 +10,17 @@ if(isset($_POST['submit'])){
 	$password = trim($_POST['password']);
 	$email = trim($_POST['email']);
 	$lvllist = $_POST['lvllist'];
+
+	//hash $password (scramble it up)
+		$hashed = hash('sha512', $password);
+		
 	if(empty($lvllist)){
 		$message = "Please select a user level.";
 	}else{
 		$result = createUser($fname, $username, $password, $email, $lvllist);
 		$message = $result;
 	}
+
 }
 
 //Sends email with username and password to newly created user
@@ -24,12 +29,15 @@ if(isset($_POST['fname'])){
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 		$email = $_POST['email'];
-		$direct = "admin_usercreated.php";
+		$direct = "admin_index.php";
 
 				$sendMail = submitMessage($fname, $username, $password, $email, $direct);
-				echo "Street is empty";
+				echo "Email Sent";
 
 	}
+
+
+
 
 ?>
 <!doctype html>
