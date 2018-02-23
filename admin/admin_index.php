@@ -28,11 +28,15 @@
   }
 ?>
 
+
+
 <h1><?php echo $greeting; echo $_SESSION['users_fname']; ?>?</h1>
 
 <br>
 <p id="lastLogin">Last logged in: <?php echo $_SESSION['users_timestamp']; ?>.</p>
-<div id="logoutButtonCont"><a href="phpscripts/caller.php?caller_id=logout" id="logoutButton">Log Out</a></div>
-
+<div>
+  <div id="createuserButtonCont"><a href="admin_createuser.php" id="createuserButton">Create User</a></div>
+   <div id="createuserButtonCont"><a href="phpscripts/caller.php?caller_id=logout" id="createuserButton">Log Out</a></div>
+</div>
 </body>
 </html>

@@ -47,6 +47,28 @@ form input:hover
 	background-color: rgba(255, 255, 255, .5);
 }
 
+.createLabel
+{
+	color: #efefef;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 10px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
+.createLevel
+{
+	color: black;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 50px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
 #submit {
 	margin-top: 10px;
 }
@@ -55,12 +77,42 @@ form input:hover
 	text-align: center;
 }
 
+
+#createuserButtonCont {
+	text-align: center;
+	/*display: block;
+	float: left;
+	margin: 0 auto;
+	margin-top: 40px;*/
+	margin-bottom: 30px;
+}
+
+#createuserButton {
+	font-family: 'Raleway', sans-serif;
+	font-size: 12pt;
+	text-decoration: none;
+	border-radius: 100px;
+	border: solid 1px #efefef;
+	background-color: rgba(255, 255, 255, .2);
+	color: #efefef;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 25px;
+	transition: .5s;
+}
+
+#createuserButton:hover {
+	background-color: rgba(255, 255, 255, .5);
+}
+
 #logoutButtonCont {
 	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	/*display: block;
+	float: left;
+	margin: 0 auto;
+	margin-top: 40px;*/
 }
 
 #logoutButton {
