@@ -1,11 +1,2 @@
-http://php.net/manual/en/function.crypt.php
-
-https://www.w3schools.com/php/func_string_crypt.asp
-
-https://stackoverflow.com/questions/401656/secure-hash-and-salt-for-php-passwords
-
-Hash Password:
-https://www.youtube.com/watch?v=xEjv15xOl4M
-
-Salt Password:
-https://www.youtube.com/watch?v=-KXo8sspCho
+Show edit user page first time visited.
+https://stackoverflow.com/questions/8752398/show-different-page-if-first-time-visit
