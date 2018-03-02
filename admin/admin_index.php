@@ -5,6 +5,14 @@
 	require_once('phpscripts/config.php');
 	//confirm_logged_in(); //turn on to prevent ability to login via url
 
+//Redirect to edit user if first time logging in. (If ip = 'no' = first time)
+if(isset($user_ip['no'])){
+    header('Location: admin_edituser.php');
+  }else{
+    header('Location: admin_index.php');
+  }
+
+
 
 //INITIAL VISIT REDIRECT WORKS FOR THE FIRST TIME, BUT WON'T WORK AFTER INITIAL VISIT. LOCAL HOST STARTS CONTINUOUS LOOP OF REDIRECT
 //Check if first time login in - if so, redirect to edit user
